@@ -80,6 +80,6 @@ const bootApp = async () => {
 bootApp();
 
 /* ACTIVATE THE SERVER PORT */
-// Set up express application to use port 5000 as the access point for the server application.
-const PORT = 5000;  // Server application access point port number
+// Set up express application to use port 8080 as the access point for the server application.
+const PORT = 8080;  // Server application access point port number
 app.listen(PORT, console.log(`Server started on ${PORT}`));
