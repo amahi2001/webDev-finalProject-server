@@ -30,11 +30,18 @@ const syncDatabase = async () => {
   }  
 }
 
+//allow cors
+const cors = require('cors');
+
 /* SET UP EXPRESS APPLICATION */
 // Import Express application
 const express = require("express");
 // Create an Express application called "app"
 const app = express();
+//allow cors
+app.use(cors({
+  origin: 'http://localhost:3000'
+}));
 
 /* SET UP ROUTES */
 // Import sub-routes and associated router functions
