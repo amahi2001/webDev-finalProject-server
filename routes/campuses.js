@@ -49,9 +49,8 @@ router.delete('/:id', ash(async (req, res) => {
 
 /* ADD NEW CAMPUS */
 router.post('/', ash(async (req, res) => {
-  await Campus.create(req.body)
-    .then(createdCampus => res.status(200).json(createdCampus))
-    .catch(err => next(err));
+  let newCampus = await Campus.create(req.body);
+  res.status(200).json(newCampus);  
 }));
 
 /* EDIT CAMPUS */
