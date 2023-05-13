@@ -15,6 +15,11 @@ const Student = db.define("student", {
   lastname: {
     type: Sequelize.STRING,
     allowNull: false
+  },
+
+  imageURL: {
+    type: Sequelize.STRING,
+    defaultValue: "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
   }
 });
 

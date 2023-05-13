@@ -20,6 +20,11 @@ const Campus = db.define("campus", {
 
   description: {
     type: Sequelize.STRING,
+  },
+
+  imageURL: {
+    type: Sequelize.STRING,
+    defaultValue: "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
   }
 });
 

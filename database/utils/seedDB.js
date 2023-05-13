@@ -11,7 +11,8 @@ const seedDB = async () => {
 	const dummy_campus = await Campus.create({
 		name: "Hunter College",
 		address: "695 Park Ave, New York, NY 10065",
-		description: "This is a school in New York, New York."
+		description: "This is a school in New York, New York.",
+		imageURL: "https://s29068.pcdn.co/wp-content/uploads/hunter-new-york-city-street-view.jpg"
 	});
 	// Create a new campus
 	const dummy_campus2 = await Campus.create({
@@ -25,16 +26,16 @@ const seedDB = async () => {
 		address: "2900 Bedford Ave, Brooklyn, NY 11210",
 		description: "This is a school in Brooklyn, New York."
 	});
-	
+
 	// Create a new student for a campus
 	const dummy_student = await Student.create({
 		firstname: "Joe",
-      lastname: "Smith",
+		lastname: "Smith",
 	});
 	// Create a new student for a campus
 	const dummy_student2 = await Student.create({
 		firstname: "Mary",
-      lastname: "Johnson",
+		lastname: "Johnson",
 	});
 
 	// Add students to campuses

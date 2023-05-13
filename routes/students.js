@@ -43,7 +43,7 @@ router.get('/:id', ash(async(req, res) => {
 router.post('/', function(req, res, next) {
   Student.create(req.body)
     .then(createdStudent => res.status(200).json(createdStudent))
-    .catch(err => next(err));
+    .catch(err => res.status(500).json(err));
 });
 
 /* DELETE STUDENT */
