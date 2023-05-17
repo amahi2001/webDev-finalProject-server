@@ -32,7 +32,8 @@ const seedDB = async () => {
 	const dummy_student = await Student.create({
 		firstname: "Joe",
 		lastname: "Smith",
-		email: "joe@email.com"
+		email: "joe@email.com",
+		imageURL: "https://thumbs.dreamstime.com/b/male-student-gesturing-thumb-up-holding-laptop-computer-169027025.jpg"
 	});
 	// Create a new student for a campus
 	const dummy_student2 = await Student.create({
